@@ -1,0 +1,178 @@
+/* navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #5F9EA0;
+  font-family:'Courier New';
+}
+
+.topnav a {
+  float: right;
+  color:  #F0F8FF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5F9EA0;
+  color: white;
+}
+
+/* header */
+header {
+  background-color:#B0E0E6; 
+  color:#708090;  
+  font-family:'Courier New';
+  padding:20px;
+}
+
+/* headings */
+h2 {
+  background-color:#B0C4DE;
+  color:#464420;
+  font-family:'Courier New';
+  text-align: center;
+}
+
+/* about */
+ /* Container holding the image and the text */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #B0C4DE;
+  color: white;
+  font-size: 30px;
+  padding: 25px 40px;
+  font-family:'Courier New';
+}
+
+/* my projects */
+.frames  {
+  background: #E6E6FA;
+  text-align: center;
+}
+iframe {
+  width: 400px;
+  height: 400px;
+  margin-right: 80px;
+}
+
+
+/* contact me */
+form {
+  font-size:18px; 
+  font-family:'Courier New';
+  text-align: center;
+  background: #F5F5F5
+}
+
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family:'Courier New';
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #5F9EA0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family:'Courier New';
+}
+
+input[type=submit]:hover {
+  background-color: #B0C4DE;
+}
+
+input[type=text]:hover {
+  background-color: #4682B4;
+}
+
+textarea[type=text]:hover {
+  background-color: #4682B4;
+}
+
+/* footer */
+footer {
+  background-color:#778899;
+  color:black;
+  padding:10px
+}
+
+footer p {
+  font-size:25px; 
+  color:#F8F8FF;
+  font-family:'Courier New';
+}
+
+/* top - button */ 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Project 1</title>
+		<link rel="stylesheet" href="style.css"> 
+	</head>
+
+	<body>
+
+		<nav class="topnav">
+		    <a href="#contactme">Contact</a>
+		    <a href="#myprojects">My Projects</a>
+		    <a href="#about">About</a>
+		    <a href="#home">Home</a>
+		</nav>
+
+		<header> 
+			<h1><center>Maranatha Mantla</center></h1> 
+			<h3><center>Software Developer</center></h3> 
+		</header>	
+		
+
+		 <div id="about" class="container">
+		 	<h2 class="heading2"><strong>ABOUT</strong></h2>
+		  	<img src="images/gradphoto.jpg" alt="graduation" class="image" style="width:100%;">
+		  	<div class="middle">
+		  		<div class="text"><strong>HI, I AM A SOFTWARE DEVELOPER!</strong></div>
+		  	</div>
+		</div> 
+	
+		<div id="myprojects" class="frames">
+		 	<h2 class="heading2"><strong>MY PROJECTS</strong></h2>
+		  	<iframe src="https://www.linkedin.com/in/maranatha-mantla-1b8277171/" name="iframe_linkedin" gesture="media" allow="encrypted-media"></iframe>
+		  	<iframe src="Curriculum Vitae/index.html" name="iframe_cv" style="background-color: white"></iframe> 
+		  	<iframe class="frame2" src="https://www.dsktech.co.za/" gesture="media" allow="encrypted-media" gesture="media" allow="encrypted-media"></iframe>
+		  	
+		</div> 
+
+			<div id="contactme">
+				<h2 class="heading2"><strong>CONTACT ME</strong></h2>
+				<form id="contactme" class="form">
+			      <label for="fname">First Name:</label><br>
+			      <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+			      <label for="lname">Surname:</label><br>
+			      <input type="text" id="lname" name="lname" placeholder="Your surname.."><br>
+			      <label for="mobile">Mobile Number:</label><br>
+			      <input type="text" id="mobile" name="mobile" placeholder="Your mobile number.."><br>
+			      <label for="email">Email Address:</label><br>
+			      <input type="text" id="email" name="email" placeholder="Your email address.."><br>
+			      <label for="message">Message:</label><br>
+			      <form action="/action_page.php">
+			      <textarea type="text" style="width: 50%" name="message" rows="10" cols="30" placeholder="Leave a message.."></textarea>
+			      	<br>
+			      		<input class="button" type="submit" value="Submit">
+    			</form>
+		</div> 
+	
+
+		<footer>
+			<center>
+			<p>Maranatha Mantla: <a href="mailto:mantla.mara@gmail.com">mantla.mara@gmail.com</a> - 081 351 3742</p>
+			</center> 
+
+			 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+			 <script>
+					//Get the button
+					var mybutton = document.getElementById("myBtn");
+
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+
+					function scrollFunction() {
+					  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					    mybutton.style.display = "block";
+					  } else {
+					    mybutton.style.display = "none";
+					  }
+					}
+
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+					  document.body.scrollTop = 0;
+					  document.documentElement.scrollTop = 0;
+					}
+			</script>
+		</footer>
+
+		
+	</body>
+</html>
